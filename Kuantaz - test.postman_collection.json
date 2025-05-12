@@ -1,0 +1,19 @@
+{
+	"info": {
+		"_postman_id": "b3e18ef4-9a51-4fcb-a388-9b208812692b",
+		"name": "Kuantaz - test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "13125950"
+	},
+	"item": [
+		{
+			"name": "http://kuantaz.test/benefits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://kuantaz.test/benefits"
+			},
+			"response": []
+		}
+	]
+}
