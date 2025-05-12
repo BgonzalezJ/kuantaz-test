@@ -1,0 +1,130 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Kuantaz documentación",
+        "description": "Documentación del endpoint de beneficios",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/benefits": {
+            "get": {
+                "tags": [
+                    "Beneficios"
+                ],
+                "summary": "Obtener beneficios",
+                "operationId": "6224c3aebabbd2b83d33c607d39b459e",
+                "responses": {
+                    "200": {
+                        "description": "Respuesta con lista de beneficios",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "code": {
+                                            "type": "integer",
+                                            "example": 200
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "year": {
+                                                        "type": "integer",
+                                                        "example": 2024
+                                                    },
+                                                    "num": {
+                                                        "type": "integer",
+                                                        "example": 5
+                                                    },
+                                                    "total": {
+                                                        "type": "integer",
+                                                        "example": 20000
+                                                    },
+                                                    "beneficios": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "properties": {
+                                                                "id_programa": {
+                                                                    "type": "integer",
+                                                                    "example": 100
+                                                                },
+                                                                "monto": {
+                                                                    "type": "integer",
+                                                                    "example": 20000
+                                                                },
+                                                                "fecha_recepcion": {
+                                                                    "type": "string",
+                                                                    "format": "date",
+                                                                    "example": "10/01/2024"
+                                                                },
+                                                                "fecha": {
+                                                                    "type": "string",
+                                                                    "format": "date",
+                                                                    "example": "2024-01-10"
+                                                                },
+                                                                "ano": {
+                                                                    "type": "integer",
+                                                                    "example": 2024
+                                                                },
+                                                                "view": {
+                                                                    "type": "integer",
+                                                                    "example": true
+                                                                },
+                                                                "ficha": {
+                                                                    "properties": {
+                                                                        "id": {
+                                                                            "type": "integer",
+                                                                            "example": 199
+                                                                        },
+                                                                        "nombre": {
+                                                                            "type": "string",
+                                                                            "example": "Subsidio"
+                                                                        },
+                                                                        "id_programa": {
+                                                                            "type": "integer",
+                                                                            "example": 100
+                                                                        },
+                                                                        "url": {
+                                                                            "type": "string",
+                                                                            "example": "subsidio_familiar"
+                                                                        },
+                                                                        "categoria": {
+                                                                            "type": "string",
+                                                                            "example": "bono"
+                                                                        },
+                                                                        "descripcion": {
+                                                                            "type": "string",
+                                                                            "example": "Beneficio económico"
+                                                                        }
+                                                                    },
+                                                                    "type": "object"
+                                                                }
+                                                            },
+                                                            "type": "object"
+                                                        }
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Beneficios",
+            "description": "endpoints relacionados con beneficios"
+        }
+    ]
+}
