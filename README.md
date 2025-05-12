@@ -19,6 +19,13 @@ Proyecto basado en laravel versión 12
    ```bash
    composer install
 
+3. Copiar variables .env:
+
+Se debe copiar las variables BENEFITS_ENDPOINT, FILTERS_ENDPOINT y FILES_ENDPOINT del env.example al .env
+
+   ```bash
+   cp .env.example .env
+
 ## Documentación
 
 La documentación del test la pueden encontrar en el endpoint */api/documentation*
